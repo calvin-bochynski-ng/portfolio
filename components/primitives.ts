@@ -10,7 +10,7 @@ export const title = tv({
       cyan: "from-[#00b7fa] to-[#01cfea]",
       green: "from-[#6FEE8D] to-[#17c964]",
       pink: "from-[#FF72E1] to-[#F54C7A]",
-      gradient: "from-[#6FEE8D] to-[#5EA2EF]",
+      gradient: "from-[#6FEE8D] to-[#3b82f6]",
       foreground: "dark:from-[#FFFFFF] dark:to-[#4B4B4B]",
     },
     size: {
