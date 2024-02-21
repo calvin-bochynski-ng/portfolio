@@ -15,14 +15,14 @@ import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 import clsx from "clsx";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { GithubIcon } from "@/components/icons";
+import { GithubIcon, LinkedInIcon } from "@/components/icons";
 import { Logo } from "@/components/icons";
 import { useState } from "react";
 
 export const Navbar = () => {
   const [activeSection, setActiveSection] = useState("Home");
   return (
-    <NextUINavbar maxWidth="xl" position="sticky" shouldHideOnScroll>
+    <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
@@ -61,6 +61,13 @@ export const Navbar = () => {
           <Link isExternal href={siteConfig.links.github} aria-label="Github">
             <GithubIcon className="text-default-500" />
           </Link>
+          <Link
+            isExternal
+            href={siteConfig.links.linkedin}
+            aria-label="LinkedIn"
+          >
+            <LinkedInIcon className="text-default-500" />
+          </Link>
           <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>
@@ -69,19 +76,34 @@ export const Navbar = () => {
         <Link isExternal href={siteConfig.links.github} aria-label="Github">
           <GithubIcon className="text-default-500" />
         </Link>
+        <Link isExternal href={siteConfig.links.linkedin} aria-label="LinkedIn">
+          <LinkedInIcon className="text-default-500" />
+        </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />
       </NavbarContent>
 
       <NavbarMenu>
         <div className="mx-4 mt-2 flex flex-col gap-2">
-          {siteConfig.navMenuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link color={"foreground"} href={item.href} size="lg">
-                {item.label}
-              </Link>
-            </NavbarMenuItem>
-          ))}
+          {siteConfig.navMenuItems.map((item, index) => {
+            return (
+              <NavbarItem key={index}>
+                <NextLink
+                  className={clsx(
+                    linkStyles({ color: "foreground", underline: "hover" }),
+                    { "text-blue-500 font-bold": activeSection === item.label }
+                  )}
+                  color="foreground"
+                  href={item.href}
+                  onClick={() => {
+                    setActiveSection(item.label);
+                  }}
+                >
+                  {item.label}
+                </NextLink>
+              </NavbarItem>
+            );
+          })}
         </div>
       </NavbarMenu>
     </NextUINavbar>

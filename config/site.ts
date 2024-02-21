@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Calvin.Bochynski-Ng | Portfolio",
+  description: "Portfolio created by Calvin Bochynski-Ng",
   navItems: [
     {
       label: "Home",
@@ -16,6 +16,18 @@ export const siteConfig = {
       label: "Projects",
       href: "#projects",
     },
+    {
+      label: "Skills",
+      href: "#skills",
+    },
+    {
+      label: "Experience",
+      href: "#experience",
+    },
+    {
+      label: "Contact",
+      href: "#contact",
+    },
   ],
   navMenuItems: [
     {
@@ -26,8 +38,21 @@ export const siteConfig = {
       label: "Projects",
       href: "#projects",
     },
+    {
+      label: "Skills",
+      href: "#skills",
+    },
+    {
+      label: "Experience",
+      href: "#experience",
+    },
+    {
+      label: "Contact",
+      href: "#contact",
+    },
   ],
   links: {
     github: "https://github.com/calvin-bochynski-ng",
+    linkedin: "https://www.linkedin.com/in/calvinbochynsking",
   },
 };
