@@ -2,14 +2,14 @@ import { Link } from "@nextui-org/link";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon, LinkedInIcon, PDFDownloadIcon } from "@/components/icons";
+import { GithubIcon } from "@/components/icons";
 import { FaFilePdf } from "react-icons/fa6";
 import clsx from "clsx";
 
 export default function HomePage() {
   return (
     <section
-      className="flex flex-col items-center justify-center gap-4 scroll-mt-28 h-screen "
+      className="flex flex-col items-center justify-center gap-4 scroll-mt-28 h-svh "
       id="home"
     >
       <div className="inline-block max-w-lg text-center justify-center">
