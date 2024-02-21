@@ -1,3 +1,4 @@
+"use client";
 import { Link } from "@nextui-org/link";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
@@ -5,11 +6,24 @@ import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import { FaFilePdf } from "react-icons/fa6";
 import clsx from "clsx";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { useEffect } from "react";
 
 export default function HomePage() {
+  const { ref, inView } = useInView({ threshold: 0.75 });
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Home");
+    }
+  }, [inView, setActiveSection]);
+
   return (
     <section
-      className="flex flex-col items-center justify-center gap-4 scroll-mt-28 h-svh "
+      ref={ref}
+      className="flex flex-col items-center justify-center gap-4 scroll-mt-[100rem] h-svh "
       id="home"
     >
       <div className="inline-block max-w-lg text-center justify-center">

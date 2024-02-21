@@ -1,11 +1,26 @@
+"use client";
+
 import { title } from "@/components/primitives";
 import { skillsConfig } from "@/config/skills";
+import { useActiveSectionContext } from "@/context/active-section-context";
 import { button as buttonStyles } from "@nextui-org/theme";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 export default function SkillsPage() {
+  const { ref, inView } = useInView({ threshold: 0.75 });
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Skills");
+    }
+  }, [inView, setActiveSection]);
+
   return (
     <section
-      className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 scroll-mt-28 h-screen"
+      ref={ref}
+      className="flex flex-col items-center justify-center gap-16 py-8 md:py-10 scroll-mt-28 h-svh"
       id="skills"
     >
       <h1 className={title()}>Skills</h1>

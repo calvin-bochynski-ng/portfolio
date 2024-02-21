@@ -1,11 +1,25 @@
+"use client";
 import { subtitle, title } from "@/components/primitives";
 // import profilePicture from "@/public/Calvin Bochynski-Ng-portrait.jpg";
 import { Image } from "@nextui-org/image";
 import NextImage from "next/image";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { useEffect } from "react";
 
 export default function AboutPage() {
+  const { ref, inView } = useInView({ threshold : 0.75});
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("About");
+    }
+  }, [inView, setActiveSection]);
+
   return (
     <section
+      ref={ref}
       className="flex flex-col items-center justify-center gap-4 scroll-mt-28 "
       id="about"
     >

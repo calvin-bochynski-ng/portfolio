@@ -8,6 +8,7 @@ import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import { ParticlesBackground } from "@/components/particles";
 import Footer from "@/components/footer";
+import ActiveSectionContextProvider from "@/context/active-section-context";
 
 export const metadata: Metadata = {
   title: {
@@ -32,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="!scroll-smooth">
       <head />
       <body
         className={clsx(
@@ -42,12 +43,14 @@ export default function RootLayout({
       >
         <ParticlesBackground />
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col">
-            <Navbar />
-            <main className="container mx-auto max-w-7xl px-6 flex flex-col">
-              {children}
-            </main>
-          </div>
+          <ActiveSectionContextProvider>
+            <div className="relative flex flex-col">
+              <Navbar />
+              <main className="container mx-auto max-w-7xl px-6 flex flex-col">
+                {children}
+              </main>
+            </div>
+          </ActiveSectionContextProvider>
         </Providers>
       </body>
     </html>

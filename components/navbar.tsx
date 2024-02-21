@@ -17,10 +17,11 @@ import clsx from "clsx";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { GithubIcon, LinkedInIcon } from "@/components/icons";
 import { Logo } from "@/components/icons";
-import { useState } from "react";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export const Navbar = () => {
-  const [activeSection, setActiveSection] = useState("Home");
+  const { activeSection, setActiveSection } = useActiveSectionContext();
+  // const { activeSection, setActiveSection } = useContext(ActiveSectionContext);
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
