@@ -8,7 +8,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { useEffect } from "react";
 
 export default function AboutPage() {
-  const { ref, inView } = useInView({ threshold : 0.75});
+  const { ref, inView } = useInView({ threshold: 0.75 });
   const { setActiveSection } = useActiveSectionContext();
 
   useEffect(() => {
@@ -32,6 +32,7 @@ export default function AboutPage() {
           alt="Calvin Bochynski-Ng"
           width={300}
           height={500}
+          radius="sm"
         />
         <div className="lg:max-w-xl">
           <p className={subtitle()}>

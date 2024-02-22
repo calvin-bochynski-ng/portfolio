@@ -55,4 +55,4 @@ export const siteConfig = {
     github: "https://github.com/calvin-bochynski-ng",
     linkedin: "https://www.linkedin.com/in/calvinbochynsking",
   },
-};
+} as const;

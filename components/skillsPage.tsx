@@ -25,17 +25,16 @@ export default function SkillsPage() {
     >
       <h1 className={title()}>Skills</h1>
 
-      <div className="flex flex-wrap gap-4 justify-center items-center max-w-sm lg:max-w-5xl">
+      <div className="flex flex-wrap gap-4 justify-around items-center max-w-sm lg:max-w-5xl">
         {skillsConfig.skills.map((skill, index) => {
           return (
             <div
               key={index}
-              className={buttonStyles({
+              className={`${buttonStyles({
                 variant: "solid",
-                radius: "full",
+                radius: "sm",
                 color: "primary",
-                size: "md",
-              })}
+              })} min-w-unit-40 lg:min-w-unit-48`}
             >
               <h1>{skill.name}</h1>
             </div>

@@ -2,13 +2,8 @@
 
 import { ReactNode, useState, createContext, useContext } from "react";
 import { siteConfig } from "@/config/site";
-type SectionName =
-  | "Home"
-  | "About"
-  | "Projects"
-  | "Skills"
-  | "Experience"
-  | "Contact";
+
+type SectionName = (typeof siteConfig.navItems)[number]["label"];
 
 type ActiveSectionContextType = {
   activeSection: SectionName;
