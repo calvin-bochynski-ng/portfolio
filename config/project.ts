@@ -27,6 +27,8 @@ export const projectsData = [
       mobile: mapplarMobile,
       desktop: mapplarDesktop,
     },
+    gitRepo: "https://github.com/calvin-bochynski-ng/capstone-mapplar",
+    website: "https://mapplar.bochynski-ng.com/",
   },
   {
     title: "Acabo",
@@ -45,6 +47,8 @@ export const projectsData = [
       mobile: acaboMobile,
       desktop: null,
     },
+    gitRepo: "https://github.com/calvin-bochynski-ng/acabo-fullstack",
+    website: null,
   },
   {
     title: "Debug-Ducky",
@@ -55,6 +59,8 @@ export const projectsData = [
       mobile: null,
       desktop: debugDuckyDesktop,
     },
+    gitRepo: "https://github.com/calvin-bochynski-ng/hackathon-debug-ducky",
+    website: "https://debug-ducky.bochynski-ng.com/",
   },
   {
     title: "Star Wars Yearbook",
@@ -65,5 +71,8 @@ export const projectsData = [
       mobile: starWarsMobile,
       desktop: starWarsDesktop,
     },
+    gitRepo:
+      "https://github.com/calvin-bochynski-ng/hackathon-starwars-yearbook",
+    website: null,
   },
 ] as const;

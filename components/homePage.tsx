@@ -23,7 +23,7 @@ export default function HomePage() {
   return (
     <section
       ref={ref}
-      className="flex flex-col items-center justify-center gap-4 scroll-mt-[100rem] h-svh "
+      className="flex flex-col items-center justify-center gap-4 scroll-mt-[100rem] h-svh"
       id="home"
     >
       <div className="inline-block max-w-lg text-center justify-center">

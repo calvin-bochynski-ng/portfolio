@@ -20,7 +20,7 @@ export default function AboutPage() {
   return (
     <section
       ref={ref}
-      className="flex flex-col items-center justify-center gap-4 scroll-mt-28 "
+      className="flex flex-col items-center justify-center gap-4 scroll-mt-28  mb-48"
       id="about"
     >
       <h1 className={title()}>About me</h1>
