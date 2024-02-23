@@ -3,6 +3,11 @@ import { title } from "@/components/primitives";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 export default function ExperiencePage() {
   const { ref, inView } = useInView({ threshold: 0.75 });
@@ -21,6 +26,7 @@ export default function ExperiencePage() {
       id="experience"
     >
       <h1 className={title()}>Experience</h1>
+      <VerticalTimeline></VerticalTimeline>
     </section>
   );
 }

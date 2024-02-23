@@ -5,6 +5,8 @@ import debugDuckyDesktop from "@/public/projectImg/Debug-Ducky-Desktop.jpg";
 import starWarsMobile from "@/public/projectImg/Star-Wars-Yearbook-Mobile.png";
 import starWarsDesktop from "@/public/projectImg/Star-Wars-Yearbook-Desktop.png";
 
+export type projectsData = typeof projectsData;
+
 export const projectsData = [
   {
     title: "Mapplar",
@@ -22,6 +24,8 @@ export const projectsData = [
       "JWT",
       "MySQL",
       "Jira",
+      "Figma",
+      "illustrator",
     ],
     imageUrl: {
       mobile: mapplarMobile,

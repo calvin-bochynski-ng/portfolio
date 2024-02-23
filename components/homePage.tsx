@@ -9,6 +9,7 @@ import clsx from "clsx";
 import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useEffect } from "react";
+import { FaPaperPlane } from "react-icons/fa6";
 
 export default function HomePage() {
   const { ref, inView } = useInView({ threshold: 0.75 });
@@ -48,7 +49,7 @@ export default function HomePage() {
           className={buttonStyles({
             color: "primary",
             variant: "solid",
-            radius: "full",
+            radius: "md",
           })}
           href={"/calvin-bochynski-ng-cv-software-engineer-2024.pdf"}
           download
@@ -57,14 +58,13 @@ export default function HomePage() {
           Download CV
         </a>
 
-        <Link
-          isExternal
-          className={buttonStyles({ variant: "solid", radius: "full" })}
-          href={siteConfig.links.github}
+        <a
+          className={buttonStyles({ variant: "solid", radius: "md" })}
+          href="#contact"
         >
-          <GithubIcon size={20} />
-          GitHub
-        </Link>
+          <FaPaperPlane size={20} />
+          Contact Me
+        </a>
       </div>
     </section>
   );
