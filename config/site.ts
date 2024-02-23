@@ -16,13 +16,13 @@ export const siteConfig = {
       label: "Projects",
       href: "#projects",
     },
+    // {
+    //   label: "Skills",
+    //   href: "#skills",
+    // },
     {
-      label: "Skills",
-      href: "#skills",
-    },
-    {
-      label: "Experience",
-      href: "#experience",
+      label: "Experiences",
+      href: "#experiences",
     },
     {
       label: "Contact",
@@ -38,13 +38,13 @@ export const siteConfig = {
       label: "Projects",
       href: "#projects",
     },
+    // {
+    //   label: "Skills",
+    //   href: "#skills",
+    // },
     {
-      label: "Skills",
-      href: "#skills",
-    },
-    {
-      label: "Experience",
-      href: "#experience",
+      label: "Experiences",
+      href: "#experiences",
     },
     {
       label: "Contact",

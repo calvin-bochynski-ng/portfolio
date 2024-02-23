@@ -24,10 +24,10 @@ export default function HomePage() {
   return (
     <section
       ref={ref}
-      className="flex flex-col items-center justify-center gap-4 scroll-mt-[100rem] h-svh"
+      className="flex flex-col items-center justify-center gap-16 scroll-mt-[100rem] h-svh"
       id="home"
     >
-      <div className="inline-block max-w-lg text-center justify-center">
+      <div className="inline-block max-w-lg text-center justify-center gap-8">
         <h1 className={title()}>
           Welcome! My name is
           <br />
@@ -36,21 +36,21 @@ export default function HomePage() {
           </span>
         </h1>
 
-        <h2 className={subtitle({ class: "mt-8" })}>
-          Junior Software Engineer | Front End Developer
+        <h2 className={`${subtitle({ class: "mt-8" })} capitalize !text-2xl`}>
+          junior web developer
         </h2>
-        <h2 className={subtitle({ class: "mt-8" })}>
+        {/* <h2 className={subtitle({ class: "mt-8" })}>
           Turning idea and real world problems into real life products.
-        </h2>
+        </h2> */}
       </div>
 
       <div className="flex gap-3">
         <a
-          className={buttonStyles({
+          className={`${buttonStyles({
             color: "primary",
             variant: "solid",
             radius: "md",
-          })}
+          })} bg dark:bg-blue-600`}
           href={"/calvin-bochynski-ng-cv-software-engineer-2024.pdf"}
           download
         >

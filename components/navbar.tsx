@@ -71,7 +71,7 @@ export const Navbar = () => {
           >
             <LinkedInIcon className="text-default-500" />
           </Link>
-          {/* <ThemeSwitch /> */}
+          <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>
 
@@ -82,7 +82,7 @@ export const Navbar = () => {
         <Link isExternal href={siteConfig.links.linkedin} aria-label="LinkedIn">
           <LinkedInIcon className="text-default-500" />
         </Link>
-        {/* <ThemeSwitch /> */}
+        <ThemeSwitch />
         <NavbarMenuToggle />
       </NavbarContent>
 

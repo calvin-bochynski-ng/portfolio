@@ -8,7 +8,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { useEffect } from "react";
 
 export default function AboutPage() {
-  const { ref, inView } = useInView({ threshold: 0.75 });
+  const { ref, inView } = useInView({ threshold: 0.5 });
   const { setActiveSection } = useActiveSectionContext();
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function AboutPage() {
   return (
     <section
       ref={ref}
-      className="flex flex-col items-center justify-center gap-4 scroll-mt-28  mb-48"
+      className="flex flex-col items-center justify-center gap-4 scroll-mt-28 mb-48 lg:h-svh "
       id="about"
     >
       <h1 className={title()}>About me</h1>

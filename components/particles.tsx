@@ -22,8 +22,11 @@ export const ParticlesBackground = () => {
   const options: ISourceOptions = useMemo(
     () => ({
       particles: {
+        color: {
+          value: "#71717a",
+        },
         number: {
-          value: 50,
+          value: 100,
         },
         move: {
           enable: true,
@@ -32,6 +35,9 @@ export const ParticlesBackground = () => {
           straight: false,
         },
         opacity: {
+          random: {
+            enable: true,
+          },
           animation: {
             enable: true,
             speed: 1,

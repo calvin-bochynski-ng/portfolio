@@ -20,7 +20,7 @@ export default function SkillsPage() {
   return (
     <section
       ref={ref}
-      className="flex flex-col items-center justify-center gap-16 py-8 md:py-10 scroll-mt-28"
+      className="flex flex-col items-center justify-center gap-16 py-8 md:py-10 scroll-mt-28 h-screen"
       id="skills"
     >
       <h1 className={title()}>Skills</h1>

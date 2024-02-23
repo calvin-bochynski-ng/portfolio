@@ -13,7 +13,7 @@ import { GithubIcon } from "./icons";
 import { FaGlobe } from "react-icons/fa";
 
 export default function ProjectsPage() {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({ threshold: 0.2 });
   const { setActiveSection } = useActiveSectionContext();
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function ProjectsPage() {
   return (
     <section
       ref={ref}
-      className="flex flex-col items-center justify-center gap-4 scroll-mt-28"
+      className="flex flex-col items-center gap-4 scroll-mt-28"
       id="projects"
     >
       <h1 className={title()}>Projects</h1>
@@ -50,10 +50,16 @@ function Project({
   website,
 }: ProjectProps) {
   return (
-    <article className=" group relative flex flex-col items-center bg-gray-600/20 hover:bg-gray-600/40 transition rounded-lg sm:items-start lg:max-w-5xl overflow-hidden sm:pr-8 w-full h-[48rem] sm:h-[37rem] md:h-[32rem] lg:h-[27rem] gap-16 lg:odd:pl-[7rem]">
+    <article className=" group relative flex flex-col items-center bg-gray-200/20 hover:bg-gray-300/20 dark:bg-gray-600/20 dark:hover:bg-gray-600/40 transition rounded-lg sm:items-start lg:max-w-5xl overflow-hidden sm:pr-8 w-full h-[48rem] sm:h-[37rem] md:h-[32rem] lg:h-[27rem] gap-16 lg:odd:pl-[7rem]">
       <div className=" p-4 pb-0 sm:p-4 sm:pb-8 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[55%] flex flex-col h-[30rem] sm:group-odd:ml-[15rem] md:group-odd:ml-[22rem] lg:group-odd:ml-[24rem]">
-        <h3 className={`${subtitle()} font-semibold text-white`}>{title}</h3>
-        <p className="mt-2 leading-relaxed text-gray-300">{description}</p>
+        <h3
+          className={`${subtitle()} font-semibold dark:text-white text-slate-950`}
+        >
+          {title}
+        </h3>
+        <p className="mt-2 leading-relaxedtext-gray-900 dark:text-gray-300">
+          {description}
+        </p>
         <div className="flex justify-start items-center gap-4 mb-4">
           {gitRepo && (
             <Link
@@ -62,7 +68,7 @@ function Project({
                 variant: "solid",
                 radius: "md",
                 size: "md",
-              })} opacity-0 group-hover:opacity-100 transition mt-4`}
+              })} opacity-0 group-hover:opacity-100 bg-gray-200 dark:bg-gray-600 transition mt-4`}
               href={gitRepo}
             >
               <GithubIcon size={20} />
@@ -77,7 +83,7 @@ function Project({
                 variant: "solid",
                 radius: "md",
                 size: "md",
-              })} opacity-0 group-hover:opacity-100 transition mt-4`}
+              })} opacity-0 group-hover:opacity-100 bg-gray-200 dark:bg-blue-600 transition mt-4`}
               href={website}
             >
               <FaGlobe size={20} />
@@ -117,7 +123,7 @@ function Project({
           radius="sm"
           height={450}
           className="opacity-1 lg:hidden"
-          shadow="md"
+          shadow="sm"
           as={NextImage}
         />
 
@@ -127,7 +133,7 @@ function Project({
           radius="sm"
           width={!imageUrl.desktop ? 300 : 600}
           className="opacity-1 hidden lg:flex"
-          shadow="md"
+          shadow="sm"
           as={NextImage}
         />
       </div>
