@@ -49,7 +49,7 @@ export const projectsData = [
     ],
     imageUrl: {
       mobile: acaboMobile,
-      desktop: null,
+      desktop: "",
     },
     gitRepo: "https://github.com/calvin-bochynski-ng/acabo-fullstack",
     website: null,
@@ -60,7 +60,7 @@ export const projectsData = [
       "A pair-programming hackathon with producing a rubber duck helper, this guides users with timed motivational quotes as well as functions with examples and documentation.",
     tags: ["React", "SASS", "Node.js", "Express", "illustrator"],
     imageUrl: {
-      mobile: null,
+      mobile: "",
       desktop: debugDuckyDesktop,
     },
     gitRepo: "https://github.com/calvin-bochynski-ng/hackathon-debug-ducky",
@@ -77,6 +77,6 @@ export const projectsData = [
     },
     gitRepo:
       "https://github.com/calvin-bochynski-ng/hackathon-starwars-yearbook",
-    website: null,
+    website: "",
   },
 ] as const;

@@ -119,14 +119,15 @@ function Project({
         className={` sm:absolute -bottom-64 sm:translate-y-0 sm:-right-32 md:-right-52 lg:-right-52 sm:top-8 sm:w-3/5 group-odd:right-[initial]   sm:group-hover:-translate-x-3  md:group-odd:pl-24  sm:group-hover:translate-y-3 sm:group-odd:-left-16 
         lg:group-odd:-left-40 sm:group-hover:-rotate-2 sm:group-hover:scale-110 transition sm:group-hover:group-odd:translate-x-3 
         sm:group-hover:group-odd:rotate-2 group-hover:-translate-y-8 group-hover:rotate-2 
-        ${!imageUrl.desktop ? "lg:ml-20" : ""}
+        ${!imageUrl.desktop ? "sm:-ml-20 lg:ml-20" : ""}
         
         `}
       >
         <Image
-          src={!imageUrl.mobile ? imageUrl.desktop : imageUrl.mobile}
+          src={!imageUrl.mobile ? imageUrl.desktop.src : imageUrl.mobile.src}
           alt={title}
           radius="sm"
+          width={400}
           height={450}
           className="opacity-1 lg:hidden"
           shadow="sm"
@@ -134,10 +135,11 @@ function Project({
         />
 
         <Image
-          src={!imageUrl.desktop ? imageUrl.mobile : imageUrl.desktop}
+          src={!imageUrl.desktop ? imageUrl.mobile.src : imageUrl.desktop.src}
           alt={title}
           radius="sm"
           width={!imageUrl.desktop ? 400 : 600}
+          height={450}
           className="opacity-1 hidden lg:flex"
           shadow="sm"
           as={NextImage}
