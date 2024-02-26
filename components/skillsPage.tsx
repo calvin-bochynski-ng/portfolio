@@ -11,15 +11,15 @@ export default function SkillsPage() {
   const { ref, inView } = useInView({ threshold: 0.75 });
   const { setActiveSection } = useActiveSectionContext();
 
-  useEffect(() => {
-    if (inView) {
-      setActiveSection("Skills");
-    }
-  }, [inView, setActiveSection]);
+  // useEffect(() => {
+  //   if (inView) {
+  //     setActiveSection("Skills");
+  //   }
+  // }, [inView, setActiveSection]);
 
   return (
     <section
-      ref={ref}
+      // ref={ref}
       className="flex flex-col items-center justify-center gap-16 py-8 md:py-10 scroll-mt-28 h-screen"
       id="skills"
     >
