@@ -9,7 +9,10 @@ import { ParticlesBackground } from "@/components/particles";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
-export const metadata: Metadata = {
+
+export const revalidate = 0;
+
+const metadata: Metadata = {
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
