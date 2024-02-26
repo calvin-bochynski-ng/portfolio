@@ -15,7 +15,6 @@ export default function Home() {
       {/* <SkillsPage /> */}
       <ExperiencePage />
       <ContactPage />
-      <Footer />
     </>
   );
 }

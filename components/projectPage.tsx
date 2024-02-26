@@ -56,7 +56,7 @@ function Project({
       overflow-hidden sm:pr-8 w-full h-[39rem] sm:h-[37rem] md:h-[32rem] lg:h-[27rem] gap-16 lg:odd:pl-[7rem]"
     >
       <div
-        className=" p-4 pb-0 sm:p-4 sm:pb-8 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[55%] flex flex-col  sm:group-odd:ml-[15rem] md:group-odd:ml-[22rem] 
+        className=" p-4 pb-0 sm:p-4 sm:pb-8 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[55%] flex flex-col  sm:group-odd:ml-[15rem] md:group-odd:ml-[24rem] 
       lg:group-odd:ml-[24rem]"
       >
         <h3
@@ -67,7 +67,7 @@ function Project({
         <p className="mt-2 leading-relaxed text-gray-900 dark:text-gray-300">
           {description}
         </p>
-        <div className="flex justify-start items-center gap-4 mb-4">
+        <div className="flex justify-start items-center gap-4 mb-4 ">
           {gitRepo && (
             <Link
               isExternal
@@ -116,11 +116,10 @@ function Project({
       </div>
 
       <div
-        className={` sm:absolute -bottom-64 sm:translate-y-0 sm:-right-32 md:-right-52 lg:-right-52 sm:top-8 sm:w-3/5 group-odd:right-[initial]  ${
-          !imageUrl.desktop ? " lg:pl-64 lg:ml-44" : ""
-        } sm:group-hover:-translate-x-3  md:group-odd:pl-24  sm:group-hover:translate-y-3 sm:group-odd:-left-16 
+        className={` sm:absolute -bottom-64 sm:translate-y-0 sm:-right-32 md:-right-52 lg:-right-52 sm:top-8 sm:w-3/5 group-odd:right-[initial]   sm:group-hover:-translate-x-3  md:group-odd:pl-24  sm:group-hover:translate-y-3 sm:group-odd:-left-16 
         lg:group-odd:-left-40 sm:group-hover:-rotate-2 sm:group-hover:scale-110 transition sm:group-hover:group-odd:translate-x-3 
         sm:group-hover:group-odd:rotate-2 group-hover:-translate-y-8 group-hover:rotate-2 
+        ${!imageUrl.desktop ? "lg:ml-20" : ""}
         
         `}
       >
@@ -138,7 +137,7 @@ function Project({
           src={!imageUrl.desktop ? imageUrl.mobile : imageUrl.desktop}
           alt={title}
           radius="sm"
-          width={!imageUrl.desktop ? 300 : 600}
+          width={!imageUrl.desktop ? 400 : 600}
           className="opacity-1 hidden lg:flex"
           shadow="sm"
           as={NextImage}

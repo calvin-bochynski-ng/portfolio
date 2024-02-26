@@ -4,12 +4,11 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
-import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import { ParticlesBackground } from "@/components/particles";
-import Footer from "@/components/footer";
 import ActiveSectionContextProvider from "@/context/active-section-context";
-
+import { Toaster } from "react-hot-toast";
+import Footer from "@/components/footer";
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
@@ -41,6 +40,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
+        <Toaster />
         <ParticlesBackground />
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <ActiveSectionContextProvider>
@@ -50,6 +50,7 @@ export default function RootLayout({
                 {children}
               </main>
             </div>
+            <Footer />
           </ActiveSectionContextProvider>
         </Providers>
       </body>

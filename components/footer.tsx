@@ -1,18 +1,17 @@
-import { Link } from "@nextui-org/link";
-
 const Footer = () => {
   return (
     <footer className="w-full flex items-center justify-center py-3">
-      {/* <Link
-        isExternal
-        className="flex items-center gap-1 text-current"
-        href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-        title="nextui.org homepage"
-      >
-        <span className="text-default-600">Powered by</span>
-        <p className="text-primary">NextUI</p>
-      </Link> */}
-      <p>&copy; 2024 - Calvin.Bochynski-Ng</p>
+      <div className="flex flex-col items-center">
+        <small className="text-xs">
+          &copy; 2024 - Calvin.Bochynski-Ng. All rights reserved.
+        </small>
+        <hr />
+        <p>
+          <strong>About this website: </strong>built with React & Next.js (App
+          Router & Server Action), Typescript, Tailwind CSS, React Email &
+          Resend.
+        </p>
+      </div>
     </footer>
   );
 };

@@ -1,11 +1,7 @@
 "use client";
-import { Link } from "@nextui-org/link";
 import { button as buttonStyles } from "@nextui-org/theme";
-import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
 import { FaFilePdf } from "react-icons/fa6";
-import clsx from "clsx";
 import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useEffect } from "react";
@@ -47,7 +43,7 @@ export default function HomePage() {
             color: "primary",
             variant: "solid",
             radius: "md",
-          })} bg dark:bg-blue-600`}
+          })}  dark:bg-blue-600`}
           href={"/calvin-bochynski-ng-cv-software-engineer-2024.pdf"}
           download
         >
