@@ -1,6 +1,7 @@
 "use client";
 import { subtitle, title } from "@/components/primitives";
 // import profilePicture from "@/public/Calvin Bochynski-Ng-portrait.jpg";
+import profilePicture from "@/public/Calvin-Bochynski-Ng-portrait.jpg";
 import { Image } from "@nextui-org/image";
 import NextImage from "next/image";
 import { useInView } from "react-intersection-observer";
@@ -28,7 +29,7 @@ export default function AboutPage() {
       <div className="flex-col flex max-w-sm my-4 lg:flex-row lg:max-w-5xl text-justify justify-center items-center gap-4 lg:gap-32">
         <Image
           as={NextImage}
-          src="/Calvin Bochynski-Ng-portrait.jpg"
+          src={profilePicture.src}
           alt="Calvin Bochynski-Ng"
           width={300}
           height={500}

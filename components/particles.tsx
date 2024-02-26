@@ -26,7 +26,7 @@ export const ParticlesBackground = () => {
           value: "#71717a",
         },
         number: {
-          value: 50,
+          value: 75,
         },
         move: {
           enable: true,
