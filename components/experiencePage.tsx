@@ -23,41 +23,32 @@ export default function ExperiencePage() {
   return (
     <section
       ref={ref}
-      className="flex flex-col items-center gap-16 py-8 my-16 md:py-10 scroll-mt-28"
+      className="flex flex-col items-center justify-center gap-16 py-8 my-16 md:py-10 scroll-mt-28 rounded-lg w-full"
       id="experiences"
     >
       <h1 className={title()}>Experiences</h1>
-      <VerticalTimeline animate={false} lineColor="#fafafa">
+      <VerticalTimeline animate={false}>
         {experienceConfig.map((experience, index) => {
           return (
             <React.Fragment key={index}>
               <VerticalTimelineElement
-                contentStyle={{
-                  background: "rgb(75 85 99 / 0.2)",
-                  boxShadow: "none",
-                  textAlign: "left",
-                  padding: "1.3rem 2rem",
-                  border: "1px solid rgba(75, 85, 89, 0.2)",
-                }}
-                contentArrowStyle={{
-                  borderRight: "0.4rem solid rgb(75, 85, 99, 0.8)",
-                }}
                 date={experience.date}
                 icon={experience.icon.image}
                 iconStyle={{
-                  background: `${experience.icon.name === "work" ? "#12a150" : "#006FEE"}`,
+                  boxShadow: "none",
                 }}
+                iconClassName={`${experience.icon.name === "work" ? "vertical-timeline-element-icon--work" : "vertical-timeline-element-icon--education"}`}
               >
                 <div className="flex flex-col justify-between">
                   <h3
-                    className={`${subtitle()} font-bold capitalize text-white`}
+                    className={`${subtitle()} font-bold capitalize text-gray-900 dark:text-white`}
                   >
                     {experience.title}
                   </h3>
                   <p className="!font-normal !mt-0 !text-sm">
                     {experience.location}
                   </p>
-                  <ul className="flex flex-col list-disc !mt-4 text-gray-300 gap-4 pl-5 my-4">
+                  <ul className="flex flex-col list-disc !mt-4 text-gray-900 dark:text-gray-300 gap-4 pl-5 my-4">
                     {experience.description.map((item, index) => {
                       return <li key={index}>{item}</li>;
                     })}

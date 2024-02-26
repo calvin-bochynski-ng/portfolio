@@ -50,14 +50,21 @@ function Project({
   website,
 }: ProjectProps) {
   return (
-    <article className=" group relative flex flex-col items-center bg-gray-200/20 hover:bg-gray-300/20 dark:bg-gray-600/20 dark:hover:bg-gray-600/40 transition rounded-lg sm:items-start lg:max-w-5xl overflow-hidden sm:pr-8 w-full h-[39rem] sm:h-[37rem] md:h-[32rem] lg:h-[27rem] gap-16 lg:odd:pl-[7rem]">
-      <div className=" p-4 pb-0 sm:p-4 sm:pb-8 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[55%] flex flex-col  sm:group-odd:ml-[15rem] md:group-odd:ml-[22rem] lg:group-odd:ml-[24rem]">
+    <article
+      className=" group relative flex flex-col items-center bg-gray-200/20 border border-gray-200 shadow-md hover:bg-white hover:border
+     hover:border-gray-300 dark:border-none dark:bg-gray-600/20 dark:hover:bg-gray-600/40 transition rounded-lg sm:items-start lg:max-w-5xl
+      overflow-hidden sm:pr-8 w-full h-[39rem] sm:h-[37rem] md:h-[32rem] lg:h-[27rem] gap-16 lg:odd:pl-[7rem]"
+    >
+      <div
+        className=" p-4 pb-0 sm:p-4 sm:pb-8 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[55%] flex flex-col  sm:group-odd:ml-[15rem] md:group-odd:ml-[22rem] 
+      lg:group-odd:ml-[24rem]"
+      >
         <h3
           className={`${subtitle()} font-semibold dark:text-white text-slate-950`}
         >
           {title}
         </h3>
-        <p className="mt-2 leading-relaxedtext-gray-900 dark:text-gray-300">
+        <p className="mt-2 leading-relaxed text-gray-900 dark:text-gray-300">
           {description}
         </p>
         <div className="flex justify-start items-center gap-4 mb-4">

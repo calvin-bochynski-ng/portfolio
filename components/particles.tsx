@@ -26,7 +26,7 @@ export const ParticlesBackground = () => {
           value: "#71717a",
         },
         number: {
-          value: 100,
+          value: 50,
         },
         move: {
           enable: true,
@@ -37,6 +37,10 @@ export const ParticlesBackground = () => {
         opacity: {
           random: {
             enable: true,
+          },
+          value: {
+            min: 0,
+            max: 0.5,
           },
           animation: {
             enable: true,
