@@ -35,19 +35,15 @@ export const ParticlesBackground = () => {
           straight: false,
         },
         opacity: {
+          value: { min: 0.2, max: 1 },
           random: {
             enable: true,
-          },
-          value: {
-            min: 0,
-            max: 0.5,
           },
           animation: {
             enable: true,
             speed: 1,
             sync: false,
           },
-          value: { min: 0, max: 1 },
         },
         size: {
           value: { min: 1, max: 2 },
