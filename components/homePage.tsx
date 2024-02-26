@@ -39,9 +39,6 @@ export default function HomePage() {
         <h2 className={`${subtitle({ class: "mt-8" })} capitalize !text-2xl`}>
           junior web developer
         </h2>
-        {/* <h2 className={subtitle({ class: "mt-8" })}>
-          Turning idea and real world problems into real life products.
-        </h2> */}
       </div>
 
       <div className="flex gap-3">
