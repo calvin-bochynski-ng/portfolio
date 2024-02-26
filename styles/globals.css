@@ -28,3 +28,7 @@
 .vertical-timeline-element-content-arrow {
   @apply !border-r-gray-200 dark:!border-r-gray-600/60;
 }
+
+.footer--link {
+  @apply text-blue-400 font-bold;
+}
