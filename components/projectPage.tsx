@@ -131,7 +131,6 @@ function Project({
           height={450}
           className="opacity-1 lg:hidden"
           shadow="sm"
-          as={NextImage}
         />
 
         <Image
@@ -142,7 +141,6 @@ function Project({
           height={450}
           className="opacity-1 hidden lg:flex"
           shadow="sm"
-          as={NextImage}
         />
       </div>
     </article>

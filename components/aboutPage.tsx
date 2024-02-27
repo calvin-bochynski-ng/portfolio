@@ -28,7 +28,6 @@ export default function AboutPage() {
 
       <div className="flex-col flex max-w-sm my-4 lg:flex-row lg:max-w-5xl text-justify justify-center items-center gap-4 lg:gap-32">
         <Image
-          as={NextImage}
           src={profilePicture.src}
           alt="Calvin Bochynski-Ng"
           width={300}

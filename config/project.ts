@@ -2,8 +2,8 @@ import mapplarMobile from "@/public/projectImg/Mapplar-Mobile.jpg";
 import mapplarDesktop from "@/public/projectImg/Mapplar-Desktop.jpg";
 import acaboMobile from "@/public/projectImg/Acabo-Mobile.jpg";
 import debugDuckyDesktop from "@/public/projectImg/Debug-Ducky-Desktop.jpg";
-import starWarsMobile from "@/public/projectImg/Star-Wars-Yearbook-Mobile.png";
-import starWarsDesktop from "@/public/projectImg/Star-Wars-Yearbook-Desktop.png";
+import starWarsMobile from "@/public/projectImg/Star-Wars-Yearbook-Mobile.jpg";
+import starWarsDesktop from "@/public/projectImg/Star-Wars-Yearbook-Desktop.jpg";
 
 export type projectsData = typeof projectsData;
 
