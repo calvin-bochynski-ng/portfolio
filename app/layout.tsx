@@ -12,7 +12,7 @@ import Footer from "@/components/footer";
 
 export const revalidate = 0;
 
-const metadata: Metadata = {
+export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
@@ -23,7 +23,7 @@ const metadata: Metadata = {
     { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
   icons: {
-    icon: "/favicon.ico",
+    icon: "/logo-small.svg",
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
@@ -35,9 +35,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className="!scroll-smooth">
-      <head />
+    <html
+      lang="en"
+      className="!scroll-smooth"
+      title="Calvin Bochynski-Ng"
+      suppressHydrationWarning={true}
+    >
+      <head>
+        <title>Calvin Bochynski-Ng</title>
+      </head>
       <body
+        suppressHydrationWarning={true}
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable

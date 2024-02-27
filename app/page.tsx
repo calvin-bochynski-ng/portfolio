@@ -12,7 +12,7 @@ export default function Home() {
       <HomePage />
       <AboutPage />
       <ProjectsPage />
-      {/* <SkillsPage /> */}
+      <SkillsPage />
       <ExperiencePage />
       <ContactPage />
     </>

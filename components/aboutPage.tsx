@@ -21,7 +21,7 @@ export default function AboutPage() {
   return (
     <section
       ref={ref}
-      className="flex flex-col items-center justify-center gap-4 scroll-mt-28 mb-48 lg:h-svh "
+      className="flex flex-col items-center justify-center gap-4  mb-48 lg:h-svh "
       id="about"
     >
       <h1 className={title()}>About me</h1>
@@ -32,7 +32,7 @@ export default function AboutPage() {
           src={profilePicture.src}
           alt="Calvin Bochynski-Ng"
           width={300}
-          height={500}
+          height={600}
           radius="sm"
         />
         <div className="lg:max-w-xl">

@@ -16,10 +16,10 @@ export const siteConfig = {
       label: "Projects",
       href: "#projects",
     },
-    // {
-    //   label: "Skills",
-    //   href: "#skills",
-    // },
+    {
+      label: "Skills",
+      href: "#skills",
+    },
     {
       label: "Experiences",
       href: "#experiences",
@@ -38,10 +38,10 @@ export const siteConfig = {
       label: "Projects",
       href: "#projects",
     },
-    // {
-    //   label: "Skills",
-    //   href: "#skills",
-    // },
+    {
+      label: "Skills",
+      href: "#skills",
+    },
     {
       label: "Experiences",
       href: "#experiences",

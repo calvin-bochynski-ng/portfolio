@@ -23,6 +23,47 @@ export const Logo: React.FC<IconSvgProps> = ({
   </svg>
 );
 
+export const LogoNew: React.FC<IconSvgProps> = ({
+  size = 36,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    fill="none"
+    height={size || height}
+    viewBox="0 0 24 24"
+    width={size || width}
+    {...props}
+  >
+    <defs>
+      <linearGradient
+        id="linear-gradient"
+        x1="15.59"
+        y1="21"
+        x2="5.2"
+        y2="3"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop offset="0" stopColor="#6fee8d" />
+        <stop offset="1" stopColor="#3b82f6" />
+      </linearGradient>
+    </defs>
+    <path
+      fill="url(#linear-gradient)"
+      // fillRule="evenodd"
+      // clipRule="evenodd"
+      d="M10.39,2.31l8.39,4.85v9.69l-8.39,4.85-8.39-4.85V7.15L10.39,2.31M10.39,0L0,6v12l10.39,6,10.39-6V6L10.39,0h0Z"
+    />
+    <path
+      fill="currentColor"
+      // fillRule="evenodd"
+      // clipRule="evenodd"
+      d="M10.39,15.85l-3.33-1.92v-3.85l3.33-1.92,3.33,1.92,1.86-1.08-5.2-3-5.2,3v6l5.2,3,5.18-2.99c-.05-.03-.34-.2-1.85-1.08l-3.33,1.92Z"
+    />
+  </svg>
+);
+
 export const DiscordIcon: React.FC<IconSvgProps> = ({
   size = 24,
   width,

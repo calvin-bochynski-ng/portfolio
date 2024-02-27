@@ -23,7 +23,7 @@ export default function ExperiencePage() {
   return (
     <section
       ref={ref}
-      className="flex flex-col items-center justify-center gap-16 py-8 my-16 md:py-10 scroll-mt-28 rounded-lg w-full"
+      className="flex flex-col items-center gap-16 py-8 my-16 md:py-10 scroll-mt-28 rounded-lg"
       id="experiences"
     >
       <h1 className={title()}>Experiences</h1>

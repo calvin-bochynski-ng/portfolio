@@ -14,19 +14,24 @@ import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 import clsx from "clsx";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { GithubIcon, LinkedInIcon } from "@/components/icons";
+import { GithubIcon, LinkedInIcon, LogoNew } from "@/components/icons";
 import { Logo } from "@/components/icons";
+import logoLight from "@/public/logo-black.svg";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { Image } from "@nextui-org/image";
+import { useEffect, useState } from "react";
 
 export const Navbar = () => {
   const { activeSection, setActiveSection } = useActiveSectionContext();
-  // const { activeSection, setActiveSection } = useContext(ActiveSectionContext);
+
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Logo />
+            <div className="flex justif-center items-center">
+              <LogoNew />
+            </div>
             <p className="font-bold text-inherit">Calvin.Bochynski-Ng</p>
           </NextLink>
         </NavbarBrand>
