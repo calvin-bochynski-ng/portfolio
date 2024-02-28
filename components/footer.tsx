@@ -2,7 +2,7 @@ import { Link } from "@nextui-org/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full flex items-center justify-center py-3">
+    <footer className="w-full flex items-center justify-center mt-auto">
       <div className="flex flex-col items-center">
         <small className="text-xs">
           &copy; 2024 - Calvin.Bochynski-Ng. All rights reserved.
