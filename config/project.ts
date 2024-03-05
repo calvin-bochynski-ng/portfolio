@@ -11,7 +11,7 @@ export const projectsData = [
   {
     title: "Mapplar",
     description:
-      "A captone project using Mapbox integration and precise OpenAI prompts to generate compelling and accurate itineraries for users. Using firebase for cloud storage and a robust user authentication system with JWT token for security and efficiency.",
+      "A capstone project using Mapbox integration and precise OpenAI prompts to generate compelling and accurate itineraries for users. Using firebase for cloud storage and a robust user authentication system with JWT token for security and efficiency.",
     tags: [
       "React",
       "SASS",
