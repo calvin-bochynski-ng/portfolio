@@ -9,8 +9,9 @@ export const skillsConfig = {
     "SQL",
     "C",
     "MATLAB",
+    "Python",
   ],
-  framework: ["React", "Node.js", "Express.js", "Next.js"],
+  framework: ["React", "Node.js", "Express.js", "Next.js", "Vite"],
   tools: [
     "Bash",
     "Terminal",
