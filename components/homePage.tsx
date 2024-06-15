@@ -44,7 +44,7 @@ export default function HomePage() {
             variant: "solid",
             radius: "md",
           })}  dark:bg-blue-600`}
-          href={"/cv-calvin-bochynski-ng-software-engineer-mar-24.pdf"}
+          href={"/Resume-calvin-bochynski-ng-web-dev-2024.pdf"}
           download
         >
           <FaFilePdf size={20} />

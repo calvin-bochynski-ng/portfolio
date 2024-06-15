@@ -43,7 +43,7 @@ export default function ExperiencePage() {
                   <h3
                     className={`${subtitle()} font-bold capitalize text-gray-900 dark:text-white`}
                   >
-                    {experience.title}
+                    {`${experience.title} ${experience.company && `| ${experience.company}`}`}
                   </h3>
                   <p className="!font-normal !mt-0 !text-sm">
                     {experience.location}
