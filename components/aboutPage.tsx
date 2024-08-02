@@ -36,14 +36,15 @@ export default function AboutPage() {
         />
         <div className="lg:max-w-xl">
           <p className={subtitle()}>
-            With a recent graduation from BrainStation Bootcamp under my belt, I
-            am excited to embark on a new journey in the industrial landscape.
-            Equipped with a robust skill set encompassing HTML, CSS, React,
-            Javascript, Node.js, Express, and MySQL, I am ready to make waves in
-            Front-End Development. Building upon over 5 years of experience in
-            Hardware RF Antenna Engineering and backed by a PhD in Electronic
-            Engineering, I bring a unique blend of technical prowess and
-            academic excellence to the table.
+            Having recently graduated from the BrainStation Bootcamp, I am
+            excited to embark on a new journey in the tech industry. With a
+            strong skill set in React, TypeScript, JavaScript, Node.js and
+            MySQL, I am prepared to excel in Front-End Development. My
+            background includes over 5 years of experience in Hardware RF
+            Antenna Engineering, complemented by a PhD in Electronic
+            Engineering. This unique combination of technical expertise and
+            academic achievement positions me well as a Junior Web Developer,
+            with aspirations to grow into a product owner role in the future.
           </p>
           <p className={subtitle()}>
             My background in project leadership, hands-on experiences, and
