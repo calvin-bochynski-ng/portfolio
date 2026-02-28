@@ -4,17 +4,18 @@ import { FaGraduationCap } from "react-icons/fa";
 import { FaSuitcase } from "react-icons/fa";
 
 export const experienceConfig = [
-  {
-    title: "Junior Web Developer",
-    company: "Sway Me Good",
-    location: "London, UK",
+    {
+    title: "Front End Engineer",
+    company: "Hawk-Eye Innovations - Sony Sports",
+    location: "London, UK | Remote",
     description: [
-      "Developed front-end web applications using React, TypeScript and Tailwind, implementing responsive designs and robust user interfaces.",
-      "Enhanced user experience with dynamic data visualisation using ChartJs and effectively utilised GraphQL APIs for efficient data querying and management.",
-      "Supported team collaboration and project management through JIRA, assigning story points, tackling tasks, and resolving bugs to maintain high code quality. ",
+      "Build and maintain production-grade React + TypeScript applications within an Nx monorepo, owning a frontend project end to end.",
+      "Deliver new features and bug fixes while transforming complex football analytics into clear, high-performance user interfaces.",
+      "Write and maintain unit tests (Jest) and end-to-end tests (Cypress), contributing to release confidence and long-term stability.",
+      "Collaborate closely with backend, data, and design teams in Agile sprints, contributing to planning, estimation, and code reviews.",
     ],
     icon: { name: "work", image: React.createElement(FaSuitcase) },
-    date: "May 2024 - Present",
+    date: "Nov 2024 - Present",
   },
   {
     title: "Freelancer",
@@ -28,6 +29,19 @@ export const experienceConfig = [
     icon: { name: "work", image: React.createElement(FaSuitcase) },
     date: "Nov 2023 - Present",
   },
+  {
+    title: "Junior Front End Developer",
+    company: "Sway Me Good",
+    location: "London, UK | Remote",
+    description: [
+      "Developed front-end web applications using React, TypeScript and Tailwind, implementing responsive designs and robust user interfaces.",
+      "Enhanced user experience with dynamic data visualisation using ChartJs and effectively utilised GraphQL APIs for efficient data querying and management.",
+      "Supported team collaboration and project management through JIRA, assigning story points, tackling tasks, and resolving bugs to maintain high code quality. ",
+    ],
+    icon: { name: "work", image: React.createElement(FaSuitcase) },
+    date: "May 2024 - Nov 2024",
+  },
+  
   {
     title: "Software Engineer",
     company: "BrainStation",

@@ -4,10 +4,56 @@ import acaboMobile from "@/public/projectImg/Acabo-Mobile.jpg";
 import debugDuckyDesktop from "@/public/projectImg/Debug-Ducky-Desktop.jpg";
 import starWarsMobile from "@/public/projectImg/Star-Wars-Yearbook-Mobile.jpg";
 import starWarsDesktop from "@/public/projectImg/Star-Wars-Yearbook-Desktop.jpg";
+import jotaArchitekciMobile from "@/public/projectImg/JOTA-Architekci-Mobile.png";
+import jotaArchitekciDesktop from "@/public/projectImg/JOTA-Architekci-Desktop.png";
+import olchowa1Mobile from "@/public/projectImg/Olchowa1-Mobile.png";
+import olchowa1Desktop from "@/public/projectImg/Olchowa1-Desktop.png";
 
 export type projectsData = typeof projectsData;
 
 export const projectsData = [
+  {
+    title: "Olchowa 1",
+    description:
+      "Olchowa 1 is a project site promoting an investment plot in Gdańsk designed for a modern office and service building with flexible floor plans and commercial potential, aimed at attracting tenants or investors interested in office and service space development. IIt was built as a React single-page application using Vite as the build tool to deliver fast, responsive performance, clean visuals, and optimised asset loading for images and content presentation.",
+    tags: [
+      "Vite",
+      "Typescript",
+      "Tailwind",
+      "React Router",
+      "Netlify",
+      "Jira",
+      "Figma",
+      "illustrator",
+    ],
+    imageUrl: {
+      mobile: olchowa1Mobile,
+      desktop: olchowa1Desktop,
+    },
+    gitRepo: null,
+    website: "https://www.olchowa1.pl/",
+  },
+  {
+    title: "JOTA Architekci",
+    description:
+      "JOTA Architekci is a modern portfolio website for a Gdańsk-based architectural studio, presenting residential and commercial projects through clean layouts, strong typography, and image-focused design. It was built as a React single-page application using Vite as the build tool, delivering optimized static assets, fast performance, and a streamlined, component-based frontend architecture.",
+    tags: [
+      "Vite",
+      "Typescript",
+      "Tailwind",
+      "React Router",
+      "Netlify",
+      "Jira",
+      "Figma",
+      "illustrator",
+    ],
+    imageUrl: {
+      mobile: jotaArchitekciMobile,
+      desktop: jotaArchitekciDesktop,
+    },
+    gitRepo: null,
+    website: "https://jotaarchitekci.pl/",
+  },
   {
     title: "Mapplar",
     description:

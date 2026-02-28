@@ -33,7 +33,7 @@ export default function HomePage() {
         </h1>
 
         <h2 className={`${subtitle({ class: "mt-8" })} capitalize !text-2xl`}>
-          junior web developer
+          Mid Front End Engineer
         </h2>
       </div>
 

@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="w-full flex items-center justify-center mt-auto">
       <div className="flex flex-col items-center">
         <small className="text-xs">
-          &copy; 2024 - Calvin.Bochynski-Ng. All rights reserved.
+          &copy; 2026 - Calvin.Bochynski-Ng. All rights reserved.
         </small>
         <hr />
         <p className="text-center text-sm p-4 lg:max-w-3xl">

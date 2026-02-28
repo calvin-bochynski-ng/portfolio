@@ -36,23 +36,10 @@ export default function AboutPage() {
         />
         <div className="lg:max-w-xl">
           <p className={subtitle()}>
-            Having recently graduated from the BrainStation Bootcamp, I am
-            excited to embark on a new journey in the tech industry. With a
-            strong skill set in React, TypeScript, JavaScript, Node.js and
-            MySQL, I am prepared to excel in Front-End Development. My
-            background includes over 5 years of experience in Hardware RF
-            Antenna Engineering, complemented by a PhD in Electronic
-            Engineering. This unique combination of technical expertise and
-            academic achievement positions me well as a Junior Web Developer,
-            with aspirations to grow into a product owner role in the future.
+            Front-End Engineer based in Warsaw, Poland and specialising in React and TypeScript, building production-grade, data-rich UIs in real-time environments. Currently working within an Nx monorepo, owning a frontend application end to end, including feature delivery and automated testing with Jest and Cypress.
           </p>
           <p className={subtitle()}>
-            My background in project leadership, hands-on experiences, and
-            collaborative teamwork has primed me to tackle the intricacies of
-            both Front-End and Back-End development with fervor. Eager to
-            contribute to cutting-edge software solutions, I am poised to
-            embrace the challenges and opportunities that lie ahead in this
-            dynamic field.
+            I focus on turning complex analytical data into clear, high-performance user experiences and collaborate closely with backend, data, and design teams in Agile environments. I also deliver freelance React projects using TypeScript and Tailwind CSS.
           </p>
         </div>
       </div>
