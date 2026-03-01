@@ -15,7 +15,7 @@ export const projectsData = [
   {
     title: "Olchowa 1",
     description:
-      "Olchowa 1 is a project site promoting an investment plot in Gdańsk designed for a modern office and service building with flexible floor plans and commercial potential, aimed at attracting tenants or investors interested in office and service space development. IIt was built as a React single-page application using Vite as the build tool to deliver fast, responsive performance, clean visuals, and optimised asset loading for images and content presentation.",
+      "Olchowa 1 is a project site promoting an investment plot in Gdańsk designed for a modern office and service building with flexible floor plans and commercial potential, aimed at attracting tenants or investors interested in office and service space development. It was built as a React single-page application using Vite as the build tool to deliver fast, responsive performance, clean visuals, and optimised asset loading for images and content presentation.",
     tags: [
       "Vite",
       "Typescript",

@@ -44,7 +44,7 @@ export default function HomePage() {
             variant: "solid",
             radius: "md",
           })}  dark:bg-blue-600`}
-          href={"/Resume-calvin-bochynski-ng-2024.pdf"}
+          href={"/Calvin Bochynski - Frontend React.pdf"}
           download
         >
           <FaFilePdf size={20} />
